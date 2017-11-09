@@ -26,14 +26,21 @@ DynEd Helper açık kaynak kodlu olduğundan neyi nasıl yaptığını anlayabil
 7. İşlem tamamlandıktan sonra uygulama listenizdeki sınıfları tanıyacak ve her bir sınıf için ayrı excel dosyası oluşturup kaynak excel dosyasının bulunduğu klasöre Sınıflar isimli yeni bir klasör oluşturup içine kaydedecek ve dosyaların içinde olduğu klasörü açacaktır.
 8. Oluşturulan dosyaları kayıt yönetim sisteminde  yeni sınıfa öğrenci kaydettiğiniz ekrandan sisteme sınıf sınıf göstererek öğrencileri kaydedebilirsiniz.
 
-PS: Umarım size de zaman kazandırır.
-PPS: Sınıf ya da öğrenci sayısı sınırlaması yok, uygulamanın çalıştığı bilgisayarın kaynakları kadar çok bilgi işleyebilirsiniz.
+* PS: Umarım size de zaman kazandırır.
 
-## Resmi Yazı ve Kılavuzlar
+* PPS: Sınıf ya da öğrenci sayısı sınırlaması yok, uygulamanın çalıştığı bilgisayarın kaynakları kadar çok bilgi işleyebilirsiniz.
+
+## Resmi Yazılar
 
 * [Yenilenen DynEd İngilizce Dil Eğitim Sistemi "Kayıt Yönetim Sistemi" ile ilgili Resmi Yazı.](http://tegm.meb.gov.tr/meb_iys_dosyalar/2017_03/30140144_resmi_yazY.pdf)
 
+## Kılavuzlar
+
 * [DynEd Kayıt Yönetim Sistemi Kullanım Kılavuzu](http://tegm.meb.gov.tr/meb_iys_dosyalar/2017_03/30140103_DynEd_KayYt_YoYnetimi_Sitesi_KullanYm_KYlavuzu.pdf)
+
+## Bağlantılar
+
+* [Download and Install DynEd Courseware](http://web2.dyned.com/download/student.shtml.en)
 
 ## Lisans
 
