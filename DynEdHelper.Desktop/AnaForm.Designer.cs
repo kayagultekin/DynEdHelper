@@ -46,6 +46,7 @@
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.Hizmetli = new System.ComponentModel.BackgroundWorker();
             this.toolStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.gbilerleme.SuspendLayout();
@@ -200,6 +201,12 @@
             this.toolStripStatusLabel2.Size = new System.Drawing.Size(66, 17);
             this.toolStripStatusLabel2.Text = "Kasım 2017";
             // 
+            // Hizmetli
+            // 
+            this.Hizmetli.WorkerReportsProgress = true;
+            this.Hizmetli.WorkerSupportsCancellation = true;
+            this.Hizmetli.DoWork += new System.ComponentModel.DoWorkEventHandler(this.Hizmetli_DoWork);
+            // 
             // AnaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -244,5 +251,6 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
         private System.Windows.Forms.ToolStripProgressBar toolStripProgressBar1;
+        private System.ComponentModel.BackgroundWorker Hizmetli;
     }
 }
