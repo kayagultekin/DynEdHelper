@@ -29,15 +29,15 @@ namespace DynEdHelper.Desktop
         {
             if (e.Cancelled)
             {
-                lblilerleme.Text = "Process was cancelled";
+                lblilerleme.Text = "İşlem iptal edildi.";
             }
             else if (e.Error != null)
             {
-                lblilerleme.Text = "There was an error running the process. The thread aborted";
+                lblilerleme.Text = "İşlem sırasında hata oluştu. Uygulama sonlandı";
             }
             else
             {
-                lblilerleme.Text = "Process was completed";
+                lblilerleme.Text = "İşlem tamamlandı";
             }
         }
 
