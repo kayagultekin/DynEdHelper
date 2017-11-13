@@ -44,8 +44,7 @@ namespace DynEdHelper.Desktop
                     IXLWorksheet workSheet = workBook.Worksheet(1);
                     #region GuardCode
 
-
-                    if (workSheet.LastColumnUsed().ColumnNumber() != 8)
+                    if (workSheet.LastColumnUsed().ColumnNumber() > 8 || workSheet.LastColumnUsed().ColumnNumber() < 7)
                     {
                         MessageBox.Show("Dosyadaki sütun sayısı olması gerekenden farklı, E-Okuldan verileri sütunlarıyla birlikte aldığınızdan emin olur musunuz?");
 
