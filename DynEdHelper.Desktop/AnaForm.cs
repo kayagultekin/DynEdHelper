@@ -67,7 +67,7 @@ namespace DynEdHelper.Desktop
 
         private void Hizmetli_DoWork(object sender, DoWorkEventArgs e)
         {
-            //Avoid Cross-Thread Op mot Valid Exception..
+            //Avoid Cross-Thread Op not Valid Exception..
             if (this.InvokeRequired)
             {
                 this.Invoke(
@@ -83,6 +83,7 @@ namespace DynEdHelper.Desktop
                     {
                         //Read the first Sheet from Excel file.
                         IXLWorksheet workSheet = workBook.Worksheet(1);
+                        
                         #region GuardCode
 
 
