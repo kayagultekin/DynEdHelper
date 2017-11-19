@@ -73,6 +73,10 @@ namespace DynEdHelper.Desktop
 
                         return;
                     }
+                    if (! workSheet.Cell(2,1).IsEmpty())
+                    {
+                        workSheet.Column("A").Clear();
+                    }
                     #endregion
 
                     int ÖğrenciSayısı = workSheet.LastRowUsed().RowNumber() - 1;
