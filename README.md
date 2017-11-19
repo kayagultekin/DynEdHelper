@@ -18,7 +18,7 @@ DynEd Helper açık kaynak kodlu olduğundan neyi nasıl yaptığını anlayabil
 3. Uygulama iki farklı şekilde indirilebilir:
     * [DynEdHelper.zip](https://github.com/kayagultekin/DynEdHelper.Desktop/raw/master/dist/DynEdHelper.zip) dosyasını indirip arşivden çıkarın ve çıkan klasör içinden DynEdHelper.exe dosyasını çalıştırın. (USB bellekte taşınabilir, portable sürüm)
 
-    * [DynEdHelper-Installer.zip](https://github.com/kayagultekin/DynEdHelper.Desktop/raw/master/dist/DynEdHelper-Installer.zip) dosyasını indirip arşivden çıkarın ve setup.exe dosyasını çalıştırıp yönergeleri izleyin. (Kurulabilir sürüm.)
+    * [publish.zip](https://github.com/kayagultekin/DynEdHelper/releases/download/v1.0.1/publish.zip) kurulum dosyasını indirip arşivden çıkarın ve setup.exe dosyasını çalıştırıp yönergeleri izleyin. (Kurulabilir sürüm.)
 
 4. **Dosya Yükle** butonunu kullanarak kaydettiğiniz excel dosyasını seçin.
 5. Oluşturulacak e-posta listesi için kullanılacak "@site.net" uzantısını dilediğiniz (geçerli) bir e-posta uzantısıyla değiştirin.
