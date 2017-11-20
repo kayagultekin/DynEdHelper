@@ -13,12 +13,29 @@ DynEd Helper açık kaynak kodlu olduğundan neyi nasıl yaptığını anlayabil
 
 1. E-Okul sisteminden -> öğrenci işleri bölümüne gidip öğrencileri (dersine girdiğiniz sınıfların öğrencilerini veya bir idareci yardımıyla ulaşabilirseniz tüm okul öğrencilerini) listeletin
 
-2. Listeyi tercihen alttan en üste kadar (**Başlık satırının tamamını da alacak şekilde**) kopyalayıp yeni bir excel dosyasının **ilk hücresine (A1)** yapıştırıp dosyayı kaydediniz.
+2. Listeyi tercihen sağ en alttan sol en üste kadar (**Başlık satırının tamamını da alacak şekilde**) seçin, kopyalayın ve yeni bir excel dosyasının **ilk hücresine (A1)** yapıştırıp dosyayı kaydediniz:
+    * Öğrenci Seçimi: 
+    
+        ![Öğrenci Seçimi](https://github.com/kayagultekin/DynEdHelper/blob/master/docs/images/OgrenciSecimi.png)
+    * Excel dosyasına yapıştırma (Kaynak Biçimlendirmesini Koru):
 
-3. Uygulama iki farklı şekilde indirilebilir:
-    * [DynEdHelper.zip](https://github.com/kayagultekin/DynEdHelper.Desktop/raw/master/dist/DynEdHelper.zip) dosyasını indirip arşivden çıkarın ve çıkan klasör içinden DynEdHelper.exe dosyasını çalıştırın. (USB bellekte taşınabilir, portable sürüm)
+         ![Kaynak Biçimlendirmesini Koru - sağ tık menüsü](https://github.com/kayagultekin/DynEdHelper/blob/master/docs/images/KaynakBicimlendirmesiniKoru-RightClick.png)
 
-    * [publish.zip](https://github.com/kayagultekin/DynEdHelper/releases/download/v1.0.1/publish.zip) kurulum dosyasını indirip arşivden çıkarın ve setup.exe dosyasını çalıştırıp yönergeleri izleyin. (Kurulabilir sürüm.)
+        Sonuç:
+        
+         ![Kaynak Biçimlendirmesini Koru](https://github.com/kayagultekin/DynEdHelper/blob/master/docs/images/KaynakBicimlendirmesiniKoru.png)
+
+    * Excel dosyasına yapıştırma (Hedef Biçimlendirmesiyle Eşle):
+
+        ![Hedef Biçimlendirmesiyle Eşle - sağ tık menüsü](https://github.com/kayagultekin/DynEdHelper/blob/master/docs/images/HedefBicimlendirmesiyleEsle-RightClick.png)
+
+        Sonuç:
+
+        ![Hedef Biçimlendirmesiyle Eşle](https://github.com/kayagultekin/DynEdHelper/blob/master/docs/images/HedefBicimlendirmesiyleEsle.png)
+
+        > **Hedef Biçimlendirmesiyle Eşle** yöntemi ile oluşan excel dosyasının işlenmesi çok daha hızlı gerçekleşir, öğrenci sayısı arttıkça bu fark gözle görülür biçimde belirginleşir. Cihazdan cihaza değişmekle birlikte bu yöntemle 15000 civarı kayıt 1 dk altında işlenebilmektedir. (Bu yöntemin çalışmasıyla ilgili bir [*sorun*](https://github.com/kayagultekin/DynEdHelper/issues/4)  [v1.0.1](https://github.com/kayagultekin/DynEdHelper/releases/tag/v1.0.1) sürümüyle giderildiğinden eski sürümleri kullanmamanızı tavsiye ederim. )
+
+3. Uygulama indirip kurmak için [publish.zip](https://github.com/kayagultekin/DynEdHelper/releases/download/v1.0.1/publish.zip) kurulum dosyasını indirip arşivden çıkarın ve setup.exe dosyasını çalıştırıp yönergeleri izleyin.
 
 4. **Dosya Yükle** butonunu kullanarak kaydettiğiniz excel dosyasını seçin.
 5. Oluşturulacak e-posta listesi için kullanılacak "@site.net" uzantısını dilediğiniz (geçerli) bir e-posta uzantısıyla değiştirin.
