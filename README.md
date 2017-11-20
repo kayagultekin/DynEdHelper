@@ -4,6 +4,8 @@ DynEd Helper, [DynEd Kayıt Yönetim Sistemi](http://dynedkayityonetimisistemi.m
 
 DynEd Helper açık kaynak kodlu olduğundan neyi nasıl yaptığını anlayabilir, önerilerinizle (issues, Pull Requests, vb.) geliştirilmesine yardımcı olabilirsiniz.
 
+## [Güncel Sürümü İndir](https://github.com/kayagultekin/DynEdHelper/releases/download/v1.0.1/publish.zip)
+
 ## Sistem Gereksinimleri
 
 1. Windows İşletim Sistemi
@@ -36,6 +38,8 @@ DynEd Helper açık kaynak kodlu olduğundan neyi nasıl yaptığını anlayabil
         > **Hedef Biçimlendirmesiyle Eşle** yöntemi ile oluşan excel dosyasının işlenmesi çok daha hızlı gerçekleşir, öğrenci sayısı arttıkça bu fark gözle görülür biçimde belirginleşir. Cihazdan cihaza değişmekle birlikte bu yöntemle 15000 civarı kayıt 1 dk altında işlenebilmektedir. (Bu yöntemin çalışmasıyla ilgili bir [*sorun*](https://github.com/kayagultekin/DynEdHelper/issues/4)  [v1.0.1](https://github.com/kayagultekin/DynEdHelper/releases/tag/v1.0.1) sürümüyle giderildiğinden eski sürümleri kullanmamanızı tavsiye ederim. )
 
 3. Uygulama indirip kurmak için [publish.zip](https://github.com/kayagultekin/DynEdHelper/releases/download/v1.0.1/publish.zip) kurulum dosyasını indirip arşivden çıkarın ve setup.exe dosyasını çalıştırıp yönergeleri izleyin.
+
+    > Daha önce yüklü olan sürümü kurulumdan önce kaldırmanız olası yükleme sorunlarının önüne geçecektir.
 
 4. **Dosya Yükle** butonunu kullanarak kaydettiğiniz excel dosyasını seçin.
 5. Oluşturulacak e-posta listesi için kullanılacak "@site.net" uzantısını dilediğiniz (geçerli) bir e-posta uzantısıyla değiştirin.
