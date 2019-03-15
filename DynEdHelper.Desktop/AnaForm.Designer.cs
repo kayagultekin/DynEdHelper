@@ -186,7 +186,7 @@
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(171, 17);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(173, 17);
             this.toolStripStatusLabel1.Text = "Gültekin KAYA @ DynEd Isparta";
             // 
             // toolStripProgressBar1
@@ -198,8 +198,8 @@
             // toolStripStatusLabel2
             // 
             this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(66, 17);
-            this.toolStripStatusLabel2.Text = "Kasım 2017";
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(59, 17);
+            this.toolStripStatusLabel2.Text = "Mart 2018";
             // 
             // Hizmetli
             // 

@@ -48,6 +48,7 @@ namespace DynEdHelper.Desktop
 
         private void openToolStripButton_Click(object sender, EventArgs e)
         {
+            openFileDialog1.FileName = "";
             openFileDialog1.ShowDialog();
         }
 
@@ -83,11 +84,9 @@ namespace DynEdHelper.Desktop
                     {
                         //Read the first Sheet from Excel file.
                         IXLWorksheet workSheet = workBook.Worksheet(1);
-                        
                         #region GuardCode
 
-
-                        if (workSheet.LastColumnUsed().ColumnNumber() != 8)
+                        if (workSheet.LastColumnUsed().ColumnNumber() > 8 || workSheet.LastColumnUsed().ColumnNumber() < 7)
                         {
                             MessageBox.Show("Dosyadaki sütun sayısı olması gerekenden farklı, E-Okuldan verileri sütunlarıyla birlikte aldığınızdan emin olur musunuz?");
 
@@ -116,11 +115,15 @@ namespace DynEdHelper.Desktop
 
                             return;
                         }
+                        if (!workSheet.Cell(2, 1).IsEmpty())
+                        {
+                            workSheet.Column("A").Clear();
+                        }
                         #endregion
 
                         int ÖğrenciSayısı = workSheet.LastRowUsed().RowNumber() - 1;
                         toolStripProgressBar1.Minimum = 0;
-                        toolStripProgressBar1.Maximum = 100;
+                        toolStripProgressBar1.Maximum = ÖğrenciSayısı;
                         toolStripProgressBar1.Value = 0;
 
                         //Create a new DataTable.
@@ -160,7 +163,7 @@ namespace DynEdHelper.Desktop
                         distinctValues = view.ToTable(true, "Sınıfı");
 
                         //GridSiniflar.DataSource = distinctValues;
-                        int işlenensayı = 0;
+
                         foreach (DataRow sınıf in distinctValues.Rows)
                         {
                             DataTable DistinctMalzeme = new DataTable();
@@ -186,40 +189,19 @@ namespace DynEdHelper.Desktop
                             table.Columns.Add("Ad Soyad", typeof(string));
                             table.Columns.Add("E-Postası", typeof(string));
                             table.Columns.Add("Şifresi", typeof(string));
-                            
-                            for (int i = 0; i < DistinctMalzeme.Rows.Count; i++)
+
+                            foreach (DataRow ogrenci in DistinctMalzeme.Rows)
                             {
-                                DataRow ogrenci = (DataRow)DistinctMalzeme.Rows[i];
                                 string AdSoyad = ogrenci[0].ToString() + " " + ogrenci[1].ToString();
                                 string Epostası = RemoveTurkishChars.SystemFriendly(ogrenci[1].ToString()) + "." + ogrenci[3].ToString() + tbDomain.Text.ToLower();
                                 string Şifresi = ogrenci[2].ToString().Substring(1, 6);
 
                                 table.Rows.Add(AdSoyad, Epostası, Şifresi);
-                                lblilerlemeOgrenci.Text = AdSoyad;
-                                if (!toolStripProgressBar1.Visible) { toolStripProgressBar1.Visible = true; }
-                                
-                                işlenensayı += 1;
-                                Hizmetli.ReportProgress((işlenensayı * 100) / ÖğrenciSayısı);
-                                //MessageBox.Show(((işlenensayı * 100) / ÖğrenciSayısı).ToString());
-                                
+
+                                // lblilerlemeOgrenci.Text = AdSoyad;
+                                toolStripProgressBar1.Visible = true;
+                                toolStripProgressBar1.Value += 1;
                             }
-
-
-                            //foreach (DataRow ogrenci in DistinctMalzeme.Rows)
-                            //{
-                            //    string AdSoyad = ogrenci[0].ToString() + " " + ogrenci[1].ToString();
-                            //    string Epostası = RemoveTurkishChars.SystemFriendly(ogrenci[1].ToString()) + "." + ogrenci[3].ToString() + tbDomain.Text.ToLower();
-                            //    string Şifresi = ogrenci[2].ToString().Substring(1, 6);
-
-                            //    table.Rows.Add(AdSoyad, Epostası, Şifresi);
-
-                            //    // lblilerlemeOgrenci.Text = AdSoyad;
-
-                            //    //toolStripProgressBar1.Visible = true;
-                            //    //toolStripProgressBar1.Value += 1;
-
-                            //    Hizmetli.ReportProgress(1);
-                            //}
 
                             var wb = new XLWorkbook();
 
@@ -228,8 +210,8 @@ namespace DynEdHelper.Desktop
                             string path = Path.GetDirectoryName(openFileDialog1.FileName.ToString());
                             wb.SaveAs(path + "/Sınıflar/" + RemoveTurkishChars.SystemFriendly(sınıf[0].ToString()) + ".xlsx");
                         }
-                        //lblilerleme.Text = "Tüm sınıflar tamamlandı!";
-                        //lblilerlemeOgrenci.Text = "Tüm öğrenciler tamamlandı!";
+                        lblilerleme.Text = "Tüm sınıflar tamamlandı!";
+                        lblilerlemeOgrenci.Text = "Tüm öğrenciler tamamlandı!";
                         System.Diagnostics.Process.Start(Path.GetDirectoryName(openFileDialog1.FileName.ToString()) + "/Sınıflar/");
                     }
                 }
