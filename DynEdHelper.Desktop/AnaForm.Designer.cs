@@ -30,36 +30,36 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AnaForm));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.openToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.OpenToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.saveToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.SaveToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.helpToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.HelpToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.tbDomain = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.gbilerleme = new System.Windows.Forms.GroupBox();
-            this.lblilerlemeOgrenci = new System.Windows.Forms.Label();
-            this.lblilerleme = new System.Windows.Forms.Label();
+            this.GBilerleme = new System.Windows.Forms.GroupBox();
+            this.LBLilerlemeOgrenci = new System.Windows.Forms.Label();
+            this.LBLilerleme = new System.Windows.Forms.Label();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
-            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.ToolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.ToolStripProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
+            this.ToolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.gbilerleme.SuspendLayout();
+            this.GBilerleme.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStrip1
             // 
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.openToolStripButton,
+            this.OpenToolStripButton,
             this.toolStripSeparator1,
-            this.saveToolStripButton,
+            this.SaveToolStripButton,
             this.toolStripSeparator,
-            this.helpToolStripButton});
+            this.HelpToolStripButton});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
@@ -67,49 +67,49 @@
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
-            // openToolStripButton
+            // OpenToolStripButton
             // 
-            this.openToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripButton.Image")));
-            this.openToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.openToolStripButton.Name = "openToolStripButton";
-            this.openToolStripButton.Size = new System.Drawing.Size(91, 22);
-            this.openToolStripButton.Text = "Dosya Yükle";
-            this.openToolStripButton.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
-            this.openToolStripButton.Click += new System.EventHandler(this.openToolStripButton_Click);
+            this.OpenToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("OpenToolStripButton.Image")));
+            this.OpenToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.OpenToolStripButton.Name = "OpenToolStripButton";
+            this.OpenToolStripButton.Size = new System.Drawing.Size(91, 22);
+            this.OpenToolStripButton.Text = "Dosya Yükle";
+            this.OpenToolStripButton.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
+            this.OpenToolStripButton.Click += new System.EventHandler(this.OpenToolStripButton_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
-            // saveToolStripButton
+            // SaveToolStripButton
             // 
-            this.saveToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripButton.Image")));
-            this.saveToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.saveToolStripButton.Name = "saveToolStripButton";
-            this.saveToolStripButton.Size = new System.Drawing.Size(134, 22);
-            this.saveToolStripButton.Text = "Listeyi İşle ve Kaydet";
-            this.saveToolStripButton.Click += new System.EventHandler(this.saveToolStripButton_Click);
+            this.SaveToolStripButton.Enabled = false;
+            this.SaveToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("SaveToolStripButton.Image")));
+            this.SaveToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.SaveToolStripButton.Name = "SaveToolStripButton";
+            this.SaveToolStripButton.Size = new System.Drawing.Size(134, 22);
+            this.SaveToolStripButton.Text = "Listeyi İşle ve Kaydet";
+            this.SaveToolStripButton.Click += new System.EventHandler(this.SaveToolStripButton_Click);
             // 
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
             this.toolStripSeparator.Size = new System.Drawing.Size(6, 25);
             // 
-            // helpToolStripButton
+            // HelpToolStripButton
             // 
-            this.helpToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.helpToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("helpToolStripButton.Image")));
-            this.helpToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.helpToolStripButton.Name = "helpToolStripButton";
-            this.helpToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.helpToolStripButton.Text = "He&lp";
-            this.helpToolStripButton.Visible = false;
+            this.HelpToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.HelpToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("HelpToolStripButton.Image")));
+            this.HelpToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.HelpToolStripButton.Name = "HelpToolStripButton";
+            this.HelpToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.HelpToolStripButton.Text = "He&lp";
+            this.HelpToolStripButton.Visible = false;
             // 
             // openFileDialog1
             // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
+            this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.OpenFileDialog1_FileOk);
             // 
             // tbDomain
             // 
@@ -140,84 +140,84 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "e-Posta için domain uzantısı";
             // 
-            // gbilerleme
+            // GBilerleme
             // 
-            this.gbilerleme.Controls.Add(this.lblilerlemeOgrenci);
-            this.gbilerleme.Controls.Add(this.lblilerleme);
-            this.gbilerleme.Location = new System.Drawing.Point(13, 28);
-            this.gbilerleme.Name = "gbilerleme";
-            this.gbilerleme.Size = new System.Drawing.Size(353, 70);
-            this.gbilerleme.TabIndex = 3;
-            this.gbilerleme.TabStop = false;
-            this.gbilerleme.Text = "İlerleme";
-            this.gbilerleme.Visible = false;
+            this.GBilerleme.Controls.Add(this.LBLilerlemeOgrenci);
+            this.GBilerleme.Controls.Add(this.LBLilerleme);
+            this.GBilerleme.Location = new System.Drawing.Point(13, 28);
+            this.GBilerleme.Name = "GBilerleme";
+            this.GBilerleme.Size = new System.Drawing.Size(353, 70);
+            this.GBilerleme.TabIndex = 3;
+            this.GBilerleme.TabStop = false;
+            this.GBilerleme.Text = "İlerleme";
+            this.GBilerleme.Visible = false;
             // 
-            // lblilerlemeOgrenci
+            // LBLilerlemeOgrenci
             // 
-            this.lblilerlemeOgrenci.AutoSize = true;
-            this.lblilerlemeOgrenci.Location = new System.Drawing.Point(10, 40);
-            this.lblilerlemeOgrenci.Name = "lblilerlemeOgrenci";
-            this.lblilerlemeOgrenci.Size = new System.Drawing.Size(35, 13);
-            this.lblilerlemeOgrenci.TabIndex = 1;
-            this.lblilerlemeOgrenci.Text = "label2";
+            this.LBLilerlemeOgrenci.AutoSize = true;
+            this.LBLilerlemeOgrenci.Location = new System.Drawing.Point(10, 40);
+            this.LBLilerlemeOgrenci.Name = "LBLilerlemeOgrenci";
+            this.LBLilerlemeOgrenci.Size = new System.Drawing.Size(35, 13);
+            this.LBLilerlemeOgrenci.TabIndex = 1;
+            this.LBLilerlemeOgrenci.Text = "label2";
             // 
-            // lblilerleme
+            // LBLilerleme
             // 
-            this.lblilerleme.AutoSize = true;
-            this.lblilerleme.Location = new System.Drawing.Point(10, 20);
-            this.lblilerleme.Name = "lblilerleme";
-            this.lblilerleme.Size = new System.Drawing.Size(35, 13);
-            this.lblilerleme.TabIndex = 0;
-            this.lblilerleme.Text = "label2";
+            this.LBLilerleme.AutoSize = true;
+            this.LBLilerleme.Location = new System.Drawing.Point(10, 20);
+            this.LBLilerleme.Name = "LBLilerleme";
+            this.LBLilerleme.Size = new System.Drawing.Size(35, 13);
+            this.LBLilerleme.TabIndex = 0;
+            this.LBLilerleme.Text = "label2";
             // 
             // statusStrip1
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1,
-            this.toolStripProgressBar1,
-            this.toolStripStatusLabel2});
+            this.ToolStripStatusLabel1,
+            this.ToolStripProgressBar1,
+            this.ToolStripStatusLabel2});
             this.statusStrip1.Location = new System.Drawing.Point(0, 112);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(381, 22);
             this.statusStrip1.TabIndex = 3;
             this.statusStrip1.Text = "statusStrip1";
             // 
-            // toolStripStatusLabel1
+            // ToolStripStatusLabel1
             // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(171, 17);
-            this.toolStripStatusLabel1.Text = "Gültekin KAYA @ DynEd Isparta";
+            this.ToolStripStatusLabel1.Name = "ToolStripStatusLabel1";
+            this.ToolStripStatusLabel1.Size = new System.Drawing.Size(171, 17);
+            this.ToolStripStatusLabel1.Text = "Gültekin KAYA @ DynEd Isparta";
             // 
-            // toolStripProgressBar1
+            // ToolStripProgressBar1
             // 
-            this.toolStripProgressBar1.Name = "toolStripProgressBar1";
-            this.toolStripProgressBar1.Size = new System.Drawing.Size(100, 16);
-            this.toolStripProgressBar1.Visible = false;
+            this.ToolStripProgressBar1.Name = "ToolStripProgressBar1";
+            this.ToolStripProgressBar1.Size = new System.Drawing.Size(100, 16);
+            this.ToolStripProgressBar1.Visible = false;
             // 
-            // toolStripStatusLabel2
+            // ToolStripStatusLabel2
             // 
-            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(66, 17);
-            this.toolStripStatusLabel2.Text = "Kasım 2017";
+            this.ToolStripStatusLabel2.Name = "ToolStripStatusLabel2";
+            this.ToolStripStatusLabel2.Size = new System.Drawing.Size(59, 17);
+            this.ToolStripStatusLabel2.Text = "Eylül 2019";
             // 
             // AnaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(381, 134);
-            this.Controls.Add(this.gbilerleme);
+            this.Controls.Add(this.GBilerleme);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.toolStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AnaForm";
-            this.Text = "DynEd Helper";
+            this.Text = "DynEd Helper ";
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.gbilerleme.ResumeLayout(false);
-            this.gbilerleme.PerformLayout();
+            this.GBilerleme.ResumeLayout(false);
+            this.GBilerleme.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -228,21 +228,21 @@
         #endregion
 
         private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripButton openToolStripButton;
+        private System.Windows.Forms.ToolStripButton OpenToolStripButton;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripButton saveToolStripButton;
+        private System.Windows.Forms.ToolStripButton SaveToolStripButton;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator;
-        private System.Windows.Forms.ToolStripButton helpToolStripButton;
+        private System.Windows.Forms.ToolStripButton HelpToolStripButton;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.TextBox tbDomain;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox gbilerleme;
-        private System.Windows.Forms.Label lblilerleme;
-        private System.Windows.Forms.Label lblilerlemeOgrenci;
+        private System.Windows.Forms.GroupBox GBilerleme;
+        private System.Windows.Forms.Label LBLilerleme;
+        private System.Windows.Forms.Label LBLilerlemeOgrenci;
         private System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
-        private System.Windows.Forms.ToolStripProgressBar toolStripProgressBar1;
+        private System.Windows.Forms.ToolStripStatusLabel ToolStripStatusLabel1;
+        private System.Windows.Forms.ToolStripStatusLabel ToolStripStatusLabel2;
+        private System.Windows.Forms.ToolStripProgressBar ToolStripProgressBar1;
     }
 }

@@ -19,21 +19,22 @@ namespace DynEdHelper.Desktop
             InitializeComponent();
         }
 
-        private void openToolStripButton_Click(object sender, EventArgs e)
+        private void OpenToolStripButton_Click(object sender, EventArgs e)
         {
             openFileDialog1.ShowDialog();
         }
-
-        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
+ 
+        private void OpenFileDialog1_FileOk(object sender, CancelEventArgs e)
         {
-            if (gbilerleme.Visible)
+            if (GBilerleme.Visible)
             {
-                gbilerleme.Visible = false;
+                GBilerleme.Visible = false;
             }
             groupBox1.Visible = true;
+            SaveToolStripButton.Enabled = true;
         }
 
-        private void saveToolStripButton_Click(object sender, EventArgs e)
+        private void SaveToolStripButton_Click(object sender, EventArgs e)
         {
             try
             {
@@ -80,9 +81,9 @@ namespace DynEdHelper.Desktop
                     #endregion
 
                     int ÖğrenciSayısı = workSheet.LastRowUsed().RowNumber() - 1;
-                    toolStripProgressBar1.Minimum = 0;
-                    toolStripProgressBar1.Maximum = ÖğrenciSayısı;
-                    toolStripProgressBar1.Value = 0;
+                    ToolStripProgressBar1.Minimum = 0;
+                    ToolStripProgressBar1.Maximum = ÖğrenciSayısı;
+                    ToolStripProgressBar1.Value = 0;
 
                     //Create a new DataTable.
                     DataTable dt = new DataTable();
@@ -135,9 +136,9 @@ namespace DynEdHelper.Desktop
 
                         // GridPerSınıf.DataSource = DistinctMalzeme;
                         // MessageBox.Show(ReplaceSpecialChars.SystemFriendly(sınıf[0].ToString()));
-                        if (!gbilerleme.Visible)
+                        if (!GBilerleme.Visible)
                         {
-                            gbilerleme.Visible = true;
+                            GBilerleme.Visible = true;
                         }
                         // lblilerleme.Text = sınıf[0].ToString();
 
@@ -157,8 +158,8 @@ namespace DynEdHelper.Desktop
                             table.Rows.Add(AdSoyad, Epostası, Şifresi);
 
                             // lblilerlemeOgrenci.Text = AdSoyad;
-                            toolStripProgressBar1.Visible = true;
-                            toolStripProgressBar1.Value += 1;
+                            ToolStripProgressBar1.Visible = true;
+                            ToolStripProgressBar1.Value += 1;
                         }
 
                         var wb = new XLWorkbook();
@@ -168,8 +169,8 @@ namespace DynEdHelper.Desktop
                         string path = Path.GetDirectoryName(openFileDialog1.FileName.ToString());
                         wb.SaveAs(path + "/Sınıflar/" + ReplaceSpecialChars.SystemFriendly(sınıf[0].ToString()) + ".xlsx");
                     }
-                    lblilerleme.Text = "Tüm sınıflar tamamlandı!";
-                    lblilerlemeOgrenci.Text = "Tüm öğrenciler tamamlandı!";
+                    LBLilerleme.Text = "Tüm sınıflar tamamlandı!";
+                    LBLilerlemeOgrenci.Text = "Tüm öğrenciler tamamlandı!";
                     System.Diagnostics.Process.Start(Path.GetDirectoryName(openFileDialog1.FileName.ToString()) + "/Sınıflar/");
                 }
             }
