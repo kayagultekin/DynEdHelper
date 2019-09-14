@@ -134,7 +134,7 @@ namespace DynEdHelper.Desktop
                         //DistinctMalzeme.Columns.Remove("Column 1");
 
                         // GridPerSınıf.DataSource = DistinctMalzeme;
-                        // MessageBox.Show(RemoveTurkishChars.SystemFriendly(sınıf[0].ToString()));
+                        // MessageBox.Show(ReplaceSpecialChars.SystemFriendly(sınıf[0].ToString()));
                         if (!gbilerleme.Visible)
                         {
                             gbilerleme.Visible = true;
@@ -151,7 +151,7 @@ namespace DynEdHelper.Desktop
                         foreach (DataRow ogrenci in DistinctMalzeme.Rows)
                         {
                             string AdSoyad = ogrenci[0].ToString() + " " + ogrenci[1].ToString();
-                            string Epostası = RemoveTurkishChars.SystemFriendly(ogrenci[1].ToString()) + "." + ogrenci[3].ToString() + tbDomain.Text.ToLower();
+                            string Epostası = ReplaceSpecialChars.SystemFriendly(ogrenci[1].ToString()) + "." + ogrenci[3].ToString() + tbDomain.Text.ToLower();
                             string Şifresi = ogrenci[2].ToString().Substring(1, 6);
 
                             table.Rows.Add(AdSoyad, Epostası, Şifresi);
@@ -166,7 +166,7 @@ namespace DynEdHelper.Desktop
                         // Add a DataTable as a worksheet
                         wb.Worksheets.Add(table, "Sayfa 1");
                         string path = Path.GetDirectoryName(openFileDialog1.FileName.ToString());
-                        wb.SaveAs(path + "/Sınıflar/" + RemoveTurkishChars.SystemFriendly(sınıf[0].ToString()) + ".xlsx");
+                        wb.SaveAs(path + "/Sınıflar/" + ReplaceSpecialChars.SystemFriendly(sınıf[0].ToString()) + ".xlsx");
                     }
                     lblilerleme.Text = "Tüm sınıflar tamamlandı!";
                     lblilerlemeOgrenci.Text = "Tüm öğrenciler tamamlandı!";

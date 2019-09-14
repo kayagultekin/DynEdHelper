@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DynEdHelper.Desktop
 {
-    class RemoveTurkishChars
+    class ReplaceSpecialChars
     {
         /// <summary>
         /// Produces optional, URL-friendly version of a title, "like-this-one". 
