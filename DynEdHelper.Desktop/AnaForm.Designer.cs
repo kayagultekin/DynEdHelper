@@ -46,6 +46,7 @@
             this.ToolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.ToolStripProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
             this.ToolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.toolStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.GBilerleme.SuspendLayout();
@@ -142,11 +143,12 @@
             // 
             // GBilerleme
             // 
+            this.GBilerleme.Controls.Add(this.linkLabel1);
             this.GBilerleme.Controls.Add(this.LBLilerlemeOgrenci);
             this.GBilerleme.Controls.Add(this.LBLilerleme);
             this.GBilerleme.Location = new System.Drawing.Point(13, 28);
             this.GBilerleme.Name = "GBilerleme";
-            this.GBilerleme.Size = new System.Drawing.Size(353, 70);
+            this.GBilerleme.Size = new System.Drawing.Size(353, 81);
             this.GBilerleme.TabIndex = 3;
             this.GBilerleme.TabStop = false;
             this.GBilerleme.Text = "İlerleme";
@@ -176,7 +178,7 @@
             this.ToolStripStatusLabel1,
             this.ToolStripProgressBar1,
             this.ToolStripStatusLabel2});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 112);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 121);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(381, 22);
             this.statusStrip1.TabIndex = 3;
@@ -197,21 +199,32 @@
             // ToolStripStatusLabel2
             // 
             this.ToolStripStatusLabel2.Name = "ToolStripStatusLabel2";
-            this.ToolStripStatusLabel2.Size = new System.Drawing.Size(59, 17);
-            this.ToolStripStatusLabel2.Text = "Eylül 2019";
+            this.ToolStripStatusLabel2.Size = new System.Drawing.Size(60, 17);
+            this.ToolStripStatusLabel2.Text = "Ekim 2019";
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(10, 57);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(142, 13);
+            this.linkLabel1.TabIndex = 2;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "DynEd Kayıt Yönetim Sistemi";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // AnaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(381, 134);
+            this.ClientSize = new System.Drawing.Size(381, 143);
             this.Controls.Add(this.GBilerleme);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.toolStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AnaForm";
-            this.Text = "DynEd Helper ";
+            this.Text = "DynEd Helper (v1.1.0)";
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -244,5 +257,6 @@
         private System.Windows.Forms.ToolStripStatusLabel ToolStripStatusLabel1;
         private System.Windows.Forms.ToolStripStatusLabel ToolStripStatusLabel2;
         private System.Windows.Forms.ToolStripProgressBar ToolStripProgressBar1;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }

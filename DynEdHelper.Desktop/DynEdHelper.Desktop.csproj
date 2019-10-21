@@ -55,7 +55,7 @@
     <ApplicationIcon>DynEdHelper.Desktop.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>B7514128F2C9E43F0437CCF759A233608CAFB3D2</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>253C76C221E8924870827D56DFB2DB75B4C05019</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestKeyFile>DynEdHelper.Desktop_TemporaryKey.pfx</ManifestKeyFile>

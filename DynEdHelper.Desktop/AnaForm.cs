@@ -180,5 +180,18 @@ namespace DynEdHelper.Desktop
                 throw;
             }
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            try
+            {
+                linkLabel1.LinkVisited = true;
+                System.Diagnostics.Process.Start("https://dynedkayityonetimisistemi.meb.gov.tr/");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("DynEd Kayıt Yönetim Sistemini açamadık :(");
+            }
+        }
     }
 }
