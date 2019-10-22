@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -30,7 +31,7 @@ namespace DynEdHelper.Desktop
             {
                 GBilerleme.Visible = false;
             }
-            groupBox1.Visible = true;
+            GBAyarlar.Visible = true;
             SaveToolStripButton.Enabled = true;
         }
 
@@ -171,7 +172,15 @@ namespace DynEdHelper.Desktop
                     }
                     LBLilerleme.Text = "Tüm sınıflar tamamlandı!";
                     LBLilerlemeOgrenci.Text = "Tüm öğrenciler tamamlandı!";
-                    System.Diagnostics.Process.Start(Path.GetDirectoryName(openFileDialog1.FileName.ToString()) + "/Sınıflar/");
+                    // System.Diagnostics.Process.Start(Path.GetDirectoryName(openFileDialog1.FileName.ToString()) + "/Sınıflar/");
+                    if (CBOpenFolder.Checked)
+                    {
+                        OpenResultingFolder();
+                    }
+                    if (CBOpenDynEd.Checked)
+                    {
+                        OpenDynedRegistrationManagementSystem();
+                    }
                 }
             }
             catch (Exception ex)
@@ -181,17 +190,48 @@ namespace DynEdHelper.Desktop
             }
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void LinkLabel1_LinkClicked(Object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            OpenDynedRegistrationManagementSystem();
+        }
+        private void OpenDynedRegistrationManagementSystem()
         {
             try
             {
-                linkLabel1.LinkVisited = true;
-                System.Diagnostics.Process.Start("https://dynedkayityonetimisistemi.meb.gov.tr/");
+                // .Net Core Workaround from https://github.com/dotnet/corefx/issues/33714#issuecomment-442214248
+                // and the reason is : https://github.com/dotnet/corefx/issues/33714#issuecomment-485532113
+                ProcessStartInfo psi = new ProcessStartInfo
+                {
+                    FileName = "https://dynedkayityonetimisistemi.meb.gov.tr/",
+                    UseShellExecute = true
+                };
+                Process.Start(psi);
             }
             catch (Exception)
             {
-                MessageBox.Show("DynEd Kayıt Yönetim Sistemini açamadık :(");
+
+                MessageBox.Show("DynEd Kayıt Yönetimi Sistemini açamadık :(");
             }
+        } 
+        private void OpenResultingFolder()
+        {
+            try
+            {
+                // .Net Core Workaround from https://github.com/dotnet/corefx/issues/33714#issuecomment-442214248
+                // and the reason is : https://github.com/dotnet/corefx/issues/33714#issuecomment-485532113
+                ProcessStartInfo psi = new ProcessStartInfo
+                {
+                    FileName = Path.GetDirectoryName(openFileDialog1.FileName.ToString()) + "/Sınıflar/",
+                    UseShellExecute = true
+                };
+                Process.Start(psi);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Sınıf listelerinin bulunduğu klasörü açamadık :(");
+            }
+            
         }
+
     }
 }

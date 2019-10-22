@@ -37,18 +37,20 @@
             this.HelpToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.tbDomain = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.GBAyarlar = new System.Windows.Forms.GroupBox();
+            this.CBOpenDynEd = new System.Windows.Forms.CheckBox();
+            this.CBOpenFolder = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.GBilerleme = new System.Windows.Forms.GroupBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.LBLilerlemeOgrenci = new System.Windows.Forms.Label();
             this.LBLilerleme = new System.Windows.Forms.Label();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.ToolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.ToolStripProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
             this.ToolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.toolStrip1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.GBAyarlar.SuspendLayout();
             this.GBilerleme.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -64,7 +66,7 @@
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.toolStrip1.Size = new System.Drawing.Size(381, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(394, 25);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -114,63 +116,100 @@
             // 
             // tbDomain
             // 
-            this.tbDomain.Location = new System.Drawing.Point(163, 16);
+            this.tbDomain.Location = new System.Drawing.Point(178, 23);
             this.tbDomain.Name = "tbDomain";
-            this.tbDomain.Size = new System.Drawing.Size(100, 20);
+            this.tbDomain.Size = new System.Drawing.Size(157, 20);
             this.tbDomain.TabIndex = 1;
             this.tbDomain.Text = "@site.net";
             // 
-            // groupBox1
+            // GBAyarlar
             // 
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.tbDomain);
-            this.groupBox1.Location = new System.Drawing.Point(13, 29);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(353, 69);
-            this.groupBox1.TabIndex = 2;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Ayarlar";
-            this.groupBox1.Visible = false;
+            this.GBAyarlar.Controls.Add(this.CBOpenDynEd);
+            this.GBAyarlar.Controls.Add(this.CBOpenFolder);
+            this.GBAyarlar.Controls.Add(this.label1);
+            this.GBAyarlar.Controls.Add(this.tbDomain);
+            this.GBAyarlar.Location = new System.Drawing.Point(22, 44);
+            this.GBAyarlar.Name = "GBAyarlar";
+            this.GBAyarlar.Size = new System.Drawing.Size(353, 132);
+            this.GBAyarlar.TabIndex = 2;
+            this.GBAyarlar.TabStop = false;
+            this.GBAyarlar.Text = "Ayarlar";
+            this.GBAyarlar.Visible = false;
+            // 
+            // CBOpenDynEd
+            // 
+            this.CBOpenDynEd.AutoSize = true;
+            this.CBOpenDynEd.Checked = true;
+            this.CBOpenDynEd.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CBOpenDynEd.Location = new System.Drawing.Point(21, 84);
+            this.CBOpenDynEd.Name = "CBOpenDynEd";
+            this.CBOpenDynEd.Size = new System.Drawing.Size(188, 17);
+            this.CBOpenDynEd.TabIndex = 4;
+            this.CBOpenDynEd.Text = "DynEd Kayıt Yönetimi Sistemi\'ni aç";
+            this.CBOpenDynEd.UseVisualStyleBackColor = true;
+            // 
+            // CBOpenFolder
+            // 
+            this.CBOpenFolder.AutoSize = true;
+            this.CBOpenFolder.Checked = true;
+            this.CBOpenFolder.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CBOpenFolder.Location = new System.Drawing.Point(21, 59);
+            this.CBOpenFolder.Name = "CBOpenFolder";
+            this.CBOpenFolder.Size = new System.Drawing.Size(179, 17);
+            this.CBOpenFolder.TabIndex = 3;
+            this.CBOpenFolder.Text = "İşlenen dosyaları klasörde göster";
+            this.CBOpenFolder.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 19);
+            this.label1.Location = new System.Drawing.Point(22, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 13);
+            this.label1.Size = new System.Drawing.Size(140, 13);
             this.label1.TabIndex = 2;
-            this.label1.Text = "e-Posta için domain uzantısı";
+            this.label1.Text = "e-Posta için domain uzantısı:";
             // 
             // GBilerleme
             // 
             this.GBilerleme.Controls.Add(this.linkLabel1);
             this.GBilerleme.Controls.Add(this.LBLilerlemeOgrenci);
             this.GBilerleme.Controls.Add(this.LBLilerleme);
-            this.GBilerleme.Location = new System.Drawing.Point(13, 28);
+            this.GBilerleme.Location = new System.Drawing.Point(22, 44);
             this.GBilerleme.Name = "GBilerleme";
-            this.GBilerleme.Size = new System.Drawing.Size(353, 81);
+            this.GBilerleme.Size = new System.Drawing.Size(353, 113);
             this.GBilerleme.TabIndex = 3;
             this.GBilerleme.TabStop = false;
             this.GBilerleme.Text = "İlerleme";
             this.GBilerleme.Visible = false;
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(21, 80);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(142, 13);
+            this.linkLabel1.TabIndex = 2;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "DynEd Kayıt Yönetim Sistemi";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabel1_LinkClicked);
+            // 
             // LBLilerlemeOgrenci
             // 
             this.LBLilerlemeOgrenci.AutoSize = true;
-            this.LBLilerlemeOgrenci.Location = new System.Drawing.Point(10, 40);
+            this.LBLilerlemeOgrenci.Location = new System.Drawing.Point(21, 50);
             this.LBLilerlemeOgrenci.Name = "LBLilerlemeOgrenci";
-            this.LBLilerlemeOgrenci.Size = new System.Drawing.Size(35, 13);
+            this.LBLilerlemeOgrenci.Size = new System.Drawing.Size(98, 13);
             this.LBLilerlemeOgrenci.TabIndex = 1;
-            this.LBLilerlemeOgrenci.Text = "label2";
+            this.LBLilerlemeOgrenci.Text = "LBLilerlemeOgrenci";
             // 
             // LBLilerleme
             // 
             this.LBLilerleme.AutoSize = true;
-            this.LBLilerleme.Location = new System.Drawing.Point(10, 20);
+            this.LBLilerleme.Location = new System.Drawing.Point(21, 25);
             this.LBLilerleme.Name = "LBLilerleme";
-            this.LBLilerleme.Size = new System.Drawing.Size(35, 13);
+            this.LBLilerleme.Size = new System.Drawing.Size(61, 13);
             this.LBLilerleme.TabIndex = 0;
-            this.LBLilerleme.Text = "label2";
+            this.LBLilerleme.Text = "LBLilerleme";
             // 
             // statusStrip1
             // 
@@ -178,9 +217,9 @@
             this.ToolStripStatusLabel1,
             this.ToolStripProgressBar1,
             this.ToolStripStatusLabel2});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 121);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 184);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(381, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(394, 22);
             this.statusStrip1.TabIndex = 3;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -202,33 +241,22 @@
             this.ToolStripStatusLabel2.Size = new System.Drawing.Size(60, 17);
             this.ToolStripStatusLabel2.Text = "Ekim 2019";
             // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(10, 57);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(142, 13);
-            this.linkLabel1.TabIndex = 2;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "DynEd Kayıt Yönetim Sistemi";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
-            // 
             // AnaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(381, 143);
+            this.ClientSize = new System.Drawing.Size(394, 206);
             this.Controls.Add(this.GBilerleme);
             this.Controls.Add(this.statusStrip1);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.GBAyarlar);
             this.Controls.Add(this.toolStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AnaForm";
             this.Text = "DynEd Helper (v1.1.0)";
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.GBAyarlar.ResumeLayout(false);
+            this.GBAyarlar.PerformLayout();
             this.GBilerleme.ResumeLayout(false);
             this.GBilerleme.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
@@ -248,7 +276,7 @@
         private System.Windows.Forms.ToolStripButton HelpToolStripButton;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.TextBox tbDomain;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox GBAyarlar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox GBilerleme;
         private System.Windows.Forms.Label LBLilerleme;
@@ -258,5 +286,7 @@
         private System.Windows.Forms.ToolStripStatusLabel ToolStripStatusLabel2;
         private System.Windows.Forms.ToolStripProgressBar ToolStripProgressBar1;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.CheckBox CBOpenDynEd;
+        private System.Windows.Forms.CheckBox CBOpenFolder;
     }
 }
