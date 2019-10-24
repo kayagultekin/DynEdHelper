@@ -252,7 +252,7 @@
             this.Controls.Add(this.toolStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AnaForm";
-            this.Text = "DynEd Helper (v1.1.0)";
+            this.Text = "DynEd Helper (v1.2.0)";
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.GBAyarlar.ResumeLayout(false);
