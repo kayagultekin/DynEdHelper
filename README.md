@@ -4,7 +4,7 @@ DynEd Helper, [DynEd Kayıt Yönetim Sistemi](http://dynedkayityonetimisistemi.m
 
 DynEd Helper açık kaynak kodlu olduğundan neyi nasıl yaptığını anlayabilir, önerilerinizle (issues, Pull Requests, vb.) geliştirilmesine yardımcı olabilirsiniz.
 
-## [Güncel Sürümü İndir (v1.1.0)](https://github.com/kayagultekin/DynEdHelper/releases/download/v1.1.0/DynEdHelper-1.1.0.zip)
+## [Güncel Sürümü İndir (v1.2.0)](https://github.com/kayagultekin/DynEdHelper/releases/download/v1.2.0/DynEdHelper-1.2.0.zip)
 
 ## Sistem Gereksinimleri
 
