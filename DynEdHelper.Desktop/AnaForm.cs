@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -168,7 +169,7 @@ namespace DynEdHelper.Desktop
                         // Add a DataTable as a worksheet
                         wb.Worksheets.Add(table, "Sayfa 1");
                         string path = Path.GetDirectoryName(openFileDialog1.FileName.ToString());
-                        wb.SaveAs(path + "/Sınıflar/" + ReplaceSpecialChars.SystemFriendly(sınıf[0].ToString()) + ".xlsx");
+                        wb.SaveAs(path + "/Sınıflar/" + sınıf[0].ToString().ToLower(new CultureInfo("tr-TR", false)).Replace("/", "-") + ".xlsx");
                     }
                     LBLilerleme.Text = "Tüm sınıflar tamamlandı!";
                     LBLilerlemeOgrenci.Text = "Tüm öğrenciler tamamlandı!";

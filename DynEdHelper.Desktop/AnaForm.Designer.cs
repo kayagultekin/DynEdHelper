@@ -226,7 +226,7 @@
             // ToolStripStatusLabel1
             // 
             this.ToolStripStatusLabel1.Name = "ToolStripStatusLabel1";
-            this.ToolStripStatusLabel1.Size = new System.Drawing.Size(171, 17);
+            this.ToolStripStatusLabel1.Size = new System.Drawing.Size(173, 17);
             this.ToolStripStatusLabel1.Text = "Gültekin KAYA @ DynEd Isparta";
             // 
             // ToolStripProgressBar1
@@ -238,8 +238,8 @@
             // ToolStripStatusLabel2
             // 
             this.ToolStripStatusLabel2.Name = "ToolStripStatusLabel2";
-            this.ToolStripStatusLabel2.Size = new System.Drawing.Size(60, 17);
-            this.ToolStripStatusLabel2.Text = "Ekim 2019";
+            this.ToolStripStatusLabel2.Size = new System.Drawing.Size(64, 17);
+            this.ToolStripStatusLabel2.Text = "Aralık 2019";
             // 
             // AnaForm
             // 
@@ -252,7 +252,7 @@
             this.Controls.Add(this.toolStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AnaForm";
-            this.Text = "DynEd Helper (v1.2.0)";
+            this.Text = "DynEd Helper (v1.3.0)";
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.GBAyarlar.ResumeLayout(false);
